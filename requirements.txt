@@ -1,0 +1,7 @@
+facebook_business
+hvac
+pandas
+pendulum
+psycopg2
+SQLAlchemy
+python-dotenv
