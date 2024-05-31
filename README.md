@@ -6,9 +6,8 @@ This project provides a Python client for interacting with the Meta (formerly Fa
 ## Features
 
 - Fetches Facebook Page and Post insights
-- Fetches Instagram Post and Account insights
-- Supports upserting data into PostgreSQL
-- Uses HashiCorp Vault for managing secrets
+- Fetches Instagram Account and Post insights
+- Supports save results as local CSV file or upsert data into PostgreSQL using SQLAlchemy.
 
 ## Installation
 
@@ -19,7 +18,7 @@ This project provides a Python client for interacting with the Meta (formerly Fa
 
 2. Navigate to the project directory:
    ```bash
-   cd FUB-analytics
+   cd meta_api_insights
    ```
 
 3. Create a virtual environment:
@@ -59,11 +58,7 @@ For example, to fetch data for Instagram from May 1, 2023, to May 10, 2023:
 
 ### Running from an IDE
 
-If running from an IDE, the script defaults to fetching Instagram data for the last 4 days.
-
-## Configuration
-
-The script uses HashiCorp Vault to retrieve database and API secrets. Ensure that your Vault is properly configured and accessible.
+If running from an IDE, the script defaults to fetching Instagram data for the last 7 days.
 
 ## API Reference
 
